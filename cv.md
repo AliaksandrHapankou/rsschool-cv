@@ -20,3 +20,6 @@ ___
 #### Work experience:
 _Not yet_
 ***
+#### English:
+_A2 (I study with a tutor, I constantly raise the level)_
+***
