@@ -83,6 +83,10 @@ html,body {
     display: flex;
 }
 
+.burger {
+    display: none;
+}
+
 .shelter {
     width: 15.7%;
     height: 100%;
@@ -195,6 +199,9 @@ html,body {
     cursor: pointer;
     background-color: #FDDCC4;
 }
+ 
+.our_friends__content__slide__item:hover .card__button {
+     background: #F1CDB3;  }
 
 .about {
     width: 100%;
@@ -289,7 +296,8 @@ html,body {
     position: absolute;
     display: flex;
     justify-content: space-between;   
-    margin-top: 181px; 
+    margin-top: 322px; 
+
 }
 
 .left__cursor {
@@ -330,7 +338,7 @@ html,body {
 }
 
 .our_friends__content__slide__items {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -353,7 +361,7 @@ html,body {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 ._pets {
@@ -725,4 +733,695 @@ html,body {
 
 .footer__content__image {
     margin-left: 160px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  
+    .topping {
+        height: 1165px;
+    }
+
+    .header {
+      width: 708px;
+      margin-top: 30px;   
+      margin-left: 30px;   
+  } 
+
+    .burger {
+        display: none;
+    }
+
+  .shelter {
+      width: 184px;
+      height: 100%;
+      margin-right: 81px;
+  }
+
+    .h1 {
+        letter-spacing: 0.05em;
+    }
+
+    .header__links {
+        width: 443px;
+        height: 27px;          
+        margin-top: 15px;    
+    }
+
+    .links__items {
+        width: 100%;
+        height: 100%;
+    }
+
+    .not_only {    
+        height: 1115px;    
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .not_only__info {
+        width: 460px;
+        height: 322px;
+    }
+
+    .not_only__info__content {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .not_only__info__content__button {
+        margin-top: 42px;
+        align-self: center;
+    }
+
+    .not_only__image {
+        width: 569px;
+        height: 593px;
+        margin-top: 100px;
+        margin-left: 15%;
+    }
+
+    .about {
+        height: 1048px;
+    }
+
+    .about__content {
+        height: 868px;
+        width: 437px;
+        margin-top: 80px;
+        display: flex;   
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+
+    .about__content__image {  
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .about__content__text {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .cursors {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .our_friends__content__slide__items > *:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .our_friends__content__slide__items {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-left: 94px;
+    }
+
+    ._no    {
+        display: none;
+    }
+
+    .help {
+        height: 779px;    
+    }
+
+    .help__content {
+        height: 599px;
+        margin-left: 69px;
+        margin-right: 69px;
+    }
+
+    .help__content__list {
+        width: 100%;
+        height: 449px;
+        display: grid;
+        gap: 55px;
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows: repeat( 3, 113px);
+    }
+
+    .list__item_trans {    
+        margin-left: 0px;
+    }
+
+    .list__item_toys {   
+        margin-left: 0px;
+    }
+
+    .list__item_bowls {    
+        margin-left: 0px;
+    }
+
+    .list__item_shampoos {    
+        margin-left: 0px;
+    }
+
+    .list__item_vitamins {   
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .list__item_med {    
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .list__item_collars{
+        margin-left: 0px;
+         margin-top: 0px;
+    }
+
+    .list__item_sleep {    
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .donation {        
+        height: 783px;   
+        justify-content: none;       
+    }
+    
+    .donation__content {
+        width: 505px;
+        height: 703px;
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;        
+    }
+
+    .donation__content__info {
+        margin-left: 0px;
+    }
+
+    .donation__content__image {
+        margin-top: 60px;
+    }
+
+    .footer__field {
+        height: 639px;
+    }
+
+    .footer__bg {
+        height: 639px;   
+    }
+
+    .footer__content {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-around; 
+    }
+
+    .footer__content__image {
+        margin-left: 0px;
+        width: 300px;
+        height: 310px;
+        margin-top: 65px;
+    }
+
+    .contacts { 
+        margin-top: 0px;
+    }
+
+    .locations {
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .topping {
+        height: 823px;
+    }
+
+    .header {
+        width: 257px;
+        margin-top: 30px;   
+        margin-left: 10px;   
+    } 
+
+    .burger {
+        display: flex;
+        width: 30px;
+        height: 22px;
+        align-self: center;
+    }
+
+    .shelter {
+        width: 184px;
+        height: 100%;
+        margin-right: 43px;
+    }
+
+    .h1 {
+        letter-spacing: 0.05em;
+    }
+
+
+    .header__links {
+        display: none;
+    }
+
+    .not_only {    
+        height: 763px;  
+        width: 300px;  
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .not_only__info {
+        width: 300px;
+        height: 296px;
+    }
+
+    .not_only__info__content {
+        width: 300px;
+        height: 296px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .not_only__info__text {
+        width: 30px;
+        height: 64px;
+        font-size: 25px;
+        line-height: 32px;
+        display: flex; 
+        flex-direction: column; 
+        width: 300px;
+        height: 64px;
+        text-align: center;
+        letter-spacing: 0.07em;
+    }
+
+    .not_only__info__text_s {
+        width: 300px;
+        height: 96px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .not_only__info__content__button {
+        margin-top: 42px;
+        align-self: center;
+    }
+
+    .not_only__image {
+        width: 260px;
+        height: 271px;
+        margin-top: 106px;
+        margin-left: 16%;
+    }
+
+    .about {
+        height: 974px;
+        width: 320px;
+    }
+
+    .about__content {
+        height: 890px;
+        width: 300px;
+        margin-top: 42px;
+        display: flex;   
+        flex-direction: column-reverse; 
+        justify-content: center;
+    }
+
+    .about__content__image {  
+        margin-top: 42px;
+        margin-left: 0px;
+        width: 260px;
+        height: 354px;
+        align-self: center;
+    }
+
+    .about__content__text {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 300px;
+        height: 494px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about__content__text1 {
+        width: 300px;
+        height: 64px;
+        font-family: 'Georgia';
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .about__content__text2 {
+        width: 270px;
+        height: 144px;
+        margin-top: 25px;
+        text-align: justify;
+        letter-spacing: 0;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .about__content__text3 {
+        width: 270px;
+        height: 239px;
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: justify;
+        line-height: 120%;
+    }
+
+    .our_friends {
+        width: 100%;
+        height: 791px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .our_friends__content {
+        width: 300px;
+        height: 707px;
+        display: flex;
+        margin-top: 42px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .our_friends__content__text {
+        width: 300px;
+        height: 64px;
+        font-family: 'Georgia';
+        font-size: 25px;
+        line-height: 32px;
+        color: #545454;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    
+    .our_friends__content__slide {
+        width: 100%;
+        height: 435px;
+        margin-top: 42px;
+        display: flex;
+    }
+    
+    .cursors {
+        width: 184px;
+        height: 52px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;   
+        margin-top: 561px; 
+    
+    }    
+
+    .our_friends__content__slide__items {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-left: 25px;
+    }       
+ 
+    .our_friends__content__primary {
+        width: 261px;
+        height: 52px;
+        margin-top: 114px;
+    }
+    
+    .help {
+        width: 320px;
+        height: 745px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .help__content {
+        width: 290px;
+        height: 661px;
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .help__content__heading {
+        width: 220px;
+        height: 64px; 
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.05em;    
+    }
+    
+    .help__content__list {
+        width: 290px;
+        height: 555px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 42px;
+    }
+    
+    .list__item_food {
+        width: 130px;    
+    }
+    
+    ._listtool {
+        height: 87px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ._listicon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    ._listtext {        
+        font-size: 15px;
+        line-height: 17px;           
+        margin-top: 20px;
+    }
+    
+    .list__item_trans {
+        width: 130px;
+        margin-left: 30px;
+    }
+    
+    .list__item_toys {
+        width: 130px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .list__item_bowls {
+        width: 130px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .list__item_shampoos {
+        width: 130px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .list__item_vitamins {
+        width: 130px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .list__item_med {
+        width: 130px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .list__item_collars{
+        width: 130px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .list__item_sleep {
+        width: 130px;
+        margin-left: 0px;
+        margin-top: 30px; 
+    }
+
+    .donation {        
+        height: 542px;  
+        width: 320px; 
+        justify-content: center;       
+    }
+    
+    .donation__content {
+        width: 300px;
+        height: 458px;
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;  
+        margin-top: 42px;      
+    }
+
+    .donation__content__info {
+        margin-left: 0px;
+        width: 300px;
+        height: 281px;
+    }
+
+    .donation__content__image {
+        margin-top: 42px;
+        width: 260px;
+        height: 135px;
+    }
+
+    .donation__content__info__heading {
+        width: 300px;
+        height: 64px;  
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    
+    .donation__content__info__property {
+        width: 273px;
+        height: 24px;
+        margin-top: 20px; 
+        line-height: 160%; 
+        align-self: center; 
+    }
+    
+    .donation__content__info__card {
+        width: 281px;
+        height: 43px;
+        align-self: center;
+    } 
+    
+    .card__number {
+        width: 206px;
+        height: 17px;
+        margin-left: 15px;    
+        font-size: 15px;
+        line-height: 110%; 
+        letter-spacing: 0.05em;
+    }
+    
+    .donation__content__info__description {
+        width: 280px;
+        height: 90px;
+        margin-top: 20px;    
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: justify
+    }
+
+    .footer__field {
+        width: 100%;
+        height: 809px;
+        display: flex;
+    }
+    
+    .footer__bg {
+        width: 100%;
+        height: 809px; 
+    }
+    
+    .footer__content {
+        width: 300px;
+        height: 779px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts { 
+        width: 278px;
+        height: 208px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    
+    .contacts__text {
+        width: 278px;
+        height: 64px;        
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.05em; 
+        text-align: center;   
+    }  
+    
+    .contacts__phone {
+        width: 239px;
+        height: 32px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    .locations {
+        width: 300px;
+        height: 222px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .locations__text {
+        width: 270px;
+        height: 64px;     
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.05em;  
+        text-align: center;
+    }
+    
+    .locations__boston {
+        width: 300px;
+        height: 46px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        
+    .locations__london {
+        width: 300px;
+        height: 32px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footer__content__image {
+        margin-left: 0px;
+        width: 260px;
+        height: 269px;
+        margin-top: 40px;
+    }
+    
+    
 }
