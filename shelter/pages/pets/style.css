@@ -1,0 +1,652 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol,li {
+    list-style: none
+}
+
+img {
+    vertical-align: top
+}
+
+h1,h2,h3,h5,h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+input, textarea, button{
+    font-family: inherit;
+}
+html,body {
+    height: 100%;
+    line-height: 1;
+    font-size: 15px;
+    color: #545454;
+    font-family: Arial;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(./../../assets/fonts/georgia/georgia-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Arial';
+    src: url(./../../assets/fonts/arial/arial-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    height: 120px;
+    display: flex;
+    width: 100%;        
+}
+
+.header__content {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    margin-left: 40px;
+    z-index: 5;
+}
+
+.burger {
+    display: none;
+}
+
+.shelter {
+    width: 15.7%;
+    height: 100%;
+}
+
+.h1 {
+    font-family: Georgia;
+    font-size: 32px;
+    color: #545454; 
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+.h1:hover {
+    cursor: pointer;
+}
+
+.shelter__text {
+    font-size: 13px;  
+    margin-top: 10px;  
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+.header__links {
+    width: 38%;
+    height: 27px; 
+    margin-left: auto;       
+    margin-top: 15px;
+}
+
+.links__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links__item__second {
+    border-bottom: 3px #F1CDB3 solid;
+}
+
+.our_friends {
+    width: 100%;
+    height: 1342px;
+    background-color: #F6F6F6;
+    z-index: -1;   
+    display: flex; 
+}
+
+.our_friends__content__slide__item:hover .card__button {
+     background: #F1CDB3;  }
+
+.our_friends__content {
+    width: 100%;
+    height: 1162px;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_friends__content__text {
+    width: 400px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.our_friends__content__slide {
+    width: 100%;
+    height: 930px;
+    display: flex;    
+    margin-top: 45px;
+}
+
+.our_friends__content__slide__items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.our_friends__content__slide__item {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_friends__content__slide__item_marg {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+._pets {
+    width: 100%;
+    height: 270px;
+}
+
+.card__text {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 30px;
+}
+
+.card__button{
+    width: 187;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #FAFAFA;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__button:hover {
+    cursor: pointer;    
+    background-color: #FDDCC4; 
+}
+
+.scroll {
+    width: 340px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+
+.scroll_item {
+    width: 52px;
+    height: 52px;
+}
+ 
+._margs {
+    margin-left: 20px;
+}
+
+.footer__field {
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+.footer__bg {
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    position: absolute;    
+}
+
+.footer__content {
+    width: 100%;
+    height: 310px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts { 
+    width: 278px;
+    height: 234px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__text {
+    width: 278px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.05em;  
+    color: #FFFFFF;  
+}
+
+.contacts__email {
+    width: 251px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contacts__email__image {
+    width: 40px;
+    height: 26px;
+}
+
+._text_footer {
+    margin-left: 20px;
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.contacts__phone {
+    width: 239px;
+    height: 32px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts__phone__image {
+    width: 40px;
+    height: 26px;
+}
+
+.locations {
+    width: 302px;
+    height: 234px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+}
+
+.locations__text {
+    width: 270px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.05em;  
+    color: #FFFFFF;
+}
+
+.locations__boston {
+    width: 302px;
+    height: 46px;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.locations__boston__text {
+    width: 260px;
+    height: 46px;
+}
+
+.locations__image {
+    width: 22px;
+    height: 32px;
+}
+
+.locations__london {
+    width: 302px;
+    height: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__content__image {
+    margin-left: 160px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    
+    .header__content {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .burger {
+        display: none;
+    }
+
+    .shelter {
+        width: 25%;        
+    }
+    
+    .header__links {
+        width: 60%;
+        margin-left: 9%;
+    }
+
+    .our_friends {
+        height: 1733px;
+    }
+
+    .our_friends__content {
+        height: 1603px;
+        margin-top: 60px;
+    }
+
+    .our_friends__content__text {
+        margin-top: 20px;
+    }
+
+    .our_friends__content__slide {
+        width: 580px;
+        height: 1365px;
+        display: flex;    
+        margin-top: 30px;
+    }
+
+    .our_friends__content__slide__items {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    ._no1 {
+        display: none;
+    }
+
+    ._nmr {
+        margin-left: 0px;
+    }
+
+    .scroll {
+        margin-top: 40px;
+    }
+
+    .footer__field {
+        height: 639px;
+    }
+
+    .footer__bg {
+        height: 639px;   
+    }
+
+    .footer__content {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-around; 
+    }
+
+    .footer__content__image {
+        margin-left: 0px;
+        width: 300px;
+        height: 310px;
+        margin-top: 65px;
+    }
+
+    .contacts { 
+        margin-top: 0px;
+    }
+
+    .locations {
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .header__content {
+        margin-left: 10px;
+        width: 260px;
+    }
+    
+    .burger {
+        display: flex;
+        width: 30px;
+        height: 22px;
+        align-self: center;
+    }
+
+    .header__links {
+        display: none;
+    }
+
+    .shelter {
+        width: 184px;  
+        margin-right: 45px;   
+    }
+
+    .h1 {
+        letter-spacing: 0.05em;
+    }
+
+    .our_friends {
+        width: 100%;
+        height: 1649px;
+    }  
+     
+    .our_friends__content {
+        width: 300px;
+        height: 1565px;
+        display: flex;
+        margin-top: 42px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .our_friends__content__text {
+        width: 300px;
+        height: 64px;     
+        font-size: 25px;
+        line-height: 130%;     
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    
+    .our_friends__content__slide {
+        width: 270px;
+        height: 1365px;
+        display: flex;    
+        margin-top: 42px;
+    }
+    
+    .our_friends__content__slide__items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;        
+        margin-top: 0px;
+    }   
+    
+    .our_friends__content__slide__item_marg {
+        margin-left: 0px;
+    }
+    
+    ._no {
+        display: none;
+    }
+
+    ._mr {
+        margin-top: 30px;
+    }
+
+    .scroll {
+        width: 300px;
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 42px;
+    }   
+     
+    ._margs {
+        margin-left: 10px;
+    }
+
+     .footer__field {
+        width: 100%;
+        height: 809px;
+        display: flex;
+    }
+    
+    .footer__bg {
+        width: 100%;
+        height: 809px; 
+    }
+    
+    .footer__content {
+        width: 300px;
+        height: 779px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts { 
+        width: 278px;
+        height: 208px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    
+    .contacts__text {
+        width: 278px;
+        height: 64px;        
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.05em; 
+        text-align: center;   
+    }  
+    
+    .contacts__phone {
+        width: 239px;
+        height: 32px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    .locations {
+        width: 300px;
+        height: 222px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .locations__text {
+        width: 270px;
+        height: 64px;     
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.05em;  
+        text-align: center;
+    }
+    
+    .locations__boston {
+        width: 300px;
+        height: 46px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        
+    .locations__london {
+        width: 300px;
+        height: 32px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footer__content__image {
+        margin-left: 0px;
+        width: 260px;
+        height: 269px;
+        margin-top: 40px;
+    }
+    
+}
